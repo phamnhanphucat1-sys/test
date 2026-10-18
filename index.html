@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#fff2ee"><title>Little Blossom — Lời chúc 20/10</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css">
+</head><body>
+<header class="topbar"><a class="brand" href="/"><span class="brand-flower">✿</span> Little Blossom</a><span class="top-note">Gửi một chút dịu dàng đến bạn ♡</span><a class="admin-link" href="/admin.html" aria-label="Quản trị viên">✧</a></header>
+<main class="entry-wrap">
+  <div class="eyebrow"><span></span> 20 THÁNG 10 · NGÀY CỦA BẠN <span></span></div>
+  <section class="entry-card">
+    <div class="flower-art" aria-hidden="true"><span class="flower f1">✿</span><span class="flower f2">❀</span><span class="flower f3">✾</span><span class="flower f4">✿</span><span class="flower f5">❀</span></div>
+    <div class="tiny-label">A LITTLE GIFT, JUST FOR YOU</div>
+    <h1>Một điều <em>đặc biệt</em><br>đang chờ bạn</h1>
+    <p class="intro">Mỗi bông hoa có một câu chuyện.<br>Hãy nhập mật mã của bạn để mở lá thư nhỏ nhé.</p>
+    <form id="code-form" class="code-form">
+      <label for="access-code">MẬT MÃ CỦA BẠN</label>
+      <div class="input-row"><input id="access-code" name="code" autocomplete="off" placeholder="Nhập mật mã tại đây" required maxlength="80"><button type="submit" id="open-btn">Mở thư <span>↗</span></button></div>
+      <p id="form-message" class="form-message" role="status"></p>
+    </form>
+    <div class="card-footer"><span>❀</span> Một lời chúc nhỏ, dành riêng cho bạn <span>❀</span></div>
+  </section>
+  <p class="bottom-note">Mong những điều dịu dàng sẽ tìm đến bạn hôm nay.</p>
+</main>
+<section id="letter-modal" class="letter-modal hidden" aria-live="polite">
+  <div class="letter-overlay"></div><article class="letter">
+    <button id="close-letter" class="close-letter" aria-label="Đóng">×</button>
+    <div class="letter-top">✿ &nbsp; LITTLE BLOSSOM &nbsp; ✿</div>
+    <div id="photo-frame" class="photo-frame"><img id="recipient-photo" alt="Ảnh dành riêng cho bạn"><div id="photo-placeholder" class="photo-placeholder">✿</div></div>
+    <p class="letter-kicker">GỬI ĐẾN</p><h2 id="recipient-name">Bạn thân mến</h2>
+    <div class="divider-flower">♡ ✿ ♡</div><p id="greeting-text" class="greeting-text"></p>
+    <div class="wish-chips"><span>✿ Xinh đẹp</span><span>✧ Tự tin</span><span>♡ Hạnh phúc</span><span>❀ Thành công</span></div>
+    <p class="letter-sign">Chúc bạn một ngày 20/10 thật dịu dàng ♡</p>
+    <button id="replay-petals" class="soft-button">Thả thêm hoa ✿</button>
+  </article>
+</section>
+<div id="petals" class="petals" aria-hidden="true"></div>
+<script src="/assets/app.js" defer></script>
+</body></html>

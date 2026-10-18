@@ -1,0 +1,19 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "little-blossom",
+  "pages_build_output_dir": ".",
+  "compatibility_date": "2026-10-18",
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "little-blossom-db",
+      "database_id": "REPLACE_WITH_D1_DATABASE_ID"
+    }
+  ],
+  "r2_buckets": [
+    {
+      "binding": "PHOTOS",
+      "bucket_name": "little-blossom-photos"
+    }
+  ]
+}

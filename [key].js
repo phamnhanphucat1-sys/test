@@ -1,0 +1,2 @@
+import {secureHeaders} from "../../_lib.js";
+export async function onRequestGet({params,env}){const key=params.key;if(!key||!/^[a-f0-9]{40}\.(jpg|png|webp|gif)$/.test(key))return new Response("Not found",{status:404});const obj=await env.PHOTOS.get(key);if(!obj)return new Response("Not found",{status:404});const h=new Headers(secureHeaders());obj.writeHttpMetadata(h);h.set("Cache-Control","public, max-age=86400");h.set("X-Content-Type-Options","nosniff");return new Response(obj.body,{headers:h})}
